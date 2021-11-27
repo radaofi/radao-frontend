@@ -1,0 +1,89 @@
+$color: #00b4ff;
+$speed: 20;
+$size: 300px;
+
+.logo-animate {
+    width: $size;
+    height: $size;
+    margin: 0 auto;
+    position: relative;
+    perspective: $size * 12;
+    perspective-origin: 50% -50%;
+    margin-right: 0px;
+    .side {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: $size;
+        height: $size;
+        clip-path: polygon(50% 0, 100% 100%, 0 100%);
+        transform-origin: 50% 0%;
+        animation: spin $speed + s infinite linear;
+        background-color: #fff;
+        background-image: url(./logo-blank.png);
+        background-size: 100% 100%;
+    }
+
+    .back {
+        animation-delay: -($speed/2) + s;
+    }
+
+    .right {
+        animation-delay: -($speed/4) + s;
+    }
+
+    .left {
+        animation-delay: -($speed * 0.75) + s;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotateY(0deg) rotateX(30deg);
+        border-bottom-color: lighten($color, 5%);
+    }
+    25% {
+        transform: rotateY(90deg) rotateX(30deg);
+        border-bottom-color: darken($color, 5%);
+        opacity: 1;
+    }
+    25.1% {
+        opacity: 0;
+    }
+    50% {
+        transform: rotateY(180deg) rotateX(30deg);
+        border-bottom-color: darken($color, 12%);
+    }
+    74.9% {
+        opacity: 0;
+    }
+    75% {
+        transform: rotateY(270deg) rotateX(30deg);
+        border-bottom-color: darken($color, 15%);
+        opacity: 1;
+    }
+    100% {
+        transform: rotateY(360deg) rotateX(30deg);
+        border-bottom-color: lighten($color, 5%);
+    }
+}
+
+.shadow {
+    position: absolute;
+    top: 300px;
+    left: 175px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    box-shadow: 0 0 40px 40px rgba($color: #000000, $alpha: 0.5);
+    animation: shadow $speed + s infinite linear;
+}
+
+@keyframes shadow {
+    0% {
+        transform: rotateX(90deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(90deg) rotateZ(-360deg);
+    }
+}

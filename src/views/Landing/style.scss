@@ -1,0 +1,30 @@
+#landing-page {
+    height: auto;
+    .container {
+        max-width: 70rem;
+        margin: auto;
+        padding: 1rem;
+    }
+    .character-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .character-logo {
+        width: 1.2rem;
+        height: 1.2rem;
+        background-image: url(../../components/TopBar/app_logo.png);
+        background-size: 100% 100%;
+        display: inline-block;
+    }
+}
+
+html,
+body {
+    overflow: auto !important;
+}
+#root,
+.app {
+    overflow: auto !important;
+    height: auto !important;
+}

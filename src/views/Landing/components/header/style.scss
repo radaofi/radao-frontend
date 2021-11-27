@@ -1,0 +1,35 @@
+.landing-header {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #303030;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-family: Monument Extended;
+
+            img {
+                height: 3rem;
+                margin-right: 0.5rem;
+            }
+        }
+        .social-row {
+            display: flex;
+            a {
+                display: block;
+                margin: 0 1rem;
+                svg {
+                    color: #fff !important;
+                }
+            }
+        }
+    }
+}

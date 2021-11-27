@@ -1,0 +1,26 @@
+#join {
+    background-color: #393939;
+    .container {
+        padding-top: 5rem;
+        text-align: center;
+
+        p {
+            color: #fff;
+            padding-bottom: 4rem;
+        }
+        .social-row {
+            display: flex;
+            justify-content: center;
+            padding: 2rem 0;
+            flex-wrap: wrap;
+            a {
+                display: flex;
+                align-items: center;
+                padding: 1rem;
+                svg {
+                    margin-right: 0.5rem;
+                }
+            }
+        }
+    }
+}

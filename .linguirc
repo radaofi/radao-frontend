@@ -1,0 +1,12 @@
+{
+   "locales": ["en", "fr", "ko", "pt", "tr"],
+   "sourceLocale": "en",
+   "catalogs": [{
+      "path": "src/locales/translations/{locale}/messages",
+      "include": ["src"]
+   }],
+   "fallbackLocales": {
+      "default": "en"
+   },
+   "format": "po"
+}

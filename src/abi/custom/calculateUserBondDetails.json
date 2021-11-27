@@ -1,0 +1,100 @@
+{
+    "abi" : [
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "name": "bondInfo",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "payout",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "vesting",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "lastBlock",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "pricePaid",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_depositor",
+                    "type": "address"
+                }
+            ],
+            "name": "pendingPayoutFor",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "pendingPayout_",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                "internalType": "address",
+                "name": "owner",
+                "type": "address"
+                },
+                {
+                "internalType": "address",
+                "name": "spender",
+                "type": "address"
+                }
+            ],
+            "name": "allowance",
+            "outputs": [
+                {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                "internalType": "address",
+                "name": "account",
+                "type": "address"
+                }
+            ],
+            "name": "balanceOf",
+            "outputs": [
+                {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        }
+    ]
+}
